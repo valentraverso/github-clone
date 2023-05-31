@@ -5,7 +5,7 @@ import { Homepage } from "../UI/pages";
 const router = createBrowserRouter([
     {
         path: '/', // Main page Layout
-        element: <p>Hii</p>
+        element: <Homepage />
     }
 ]);
 

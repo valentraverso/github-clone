@@ -1,9 +1,11 @@
+import './Homepage.css';
 
 function Homepage() {
   return (
-    <div>
+    <main className='container-homepage__main'>
       <p>Hola</p>
-    </div>)
+    </main>
+    )
 }
 
 export { Homepage }

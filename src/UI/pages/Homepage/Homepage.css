@@ -1,0 +1,6 @@
+.container-homepage__main {
+    background-image: url('/hero-bg.webp');
+    background-position: -75% 0;
+
+    height: 100vh;
+}
