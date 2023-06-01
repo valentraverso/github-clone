@@ -1,0 +1,18 @@
+.container-repository-card__div {
+    display: grid;
+    grid-template-columns: 80% 20%;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #7a828e;
+}
+
+.container-repository-data__div {
+    margin-top:10px;
+    
+    font-size: 12px;
+}
+
+.language-repository__span {
+    margin-right: 10px;
+}

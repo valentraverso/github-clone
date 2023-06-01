@@ -1,7 +1,18 @@
-.container-grid__div{
+.container-grid__div {
     display: grid;
     grid-template-columns: 25% 75%;
 
     width: 70%;
     margin: auto;
+}
+
+.container-menu-sections__div {
+    height: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.container-absolute__div {
+    position: absolute;
+    top: 40px;
+    width: 100%;
 }

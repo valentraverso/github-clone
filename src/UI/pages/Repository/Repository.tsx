@@ -15,9 +15,16 @@ function Repository() {
             <p>Loading info user</p>
             :
             <main>
-                <div className="container-grid__div">
-                    <SidebarUser user={user.data} />
-                    <ListRepos user={user.data} />
+                <div className="container-menu-sections__div">
+                    <div>
+                        <span>Overview</span>
+                    </div>
+                </div>
+                <div className="container-absolute__div">
+                    <div className="container-grid__div">
+                        <SidebarUser user={user.data} />
+                        <ListRepos user={user.data} />
+                    </div>
                 </div>
             </main >
     )
