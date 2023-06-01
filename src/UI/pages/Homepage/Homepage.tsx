@@ -9,9 +9,11 @@ function Homepage() {
         <p className='github-welcome__p'>Github Clone</p>
         <p className='valentino-copyrigth__p'>By Valentino Traverso</p>
         <div className='container-button__div'>
-          <span className='button-view__span'>
-            <Link>View Github <IoIosArrowForward /></Link>
-          </span>
+          <Link to="/repository">
+            <span className='button-github__div'>
+              View Github <IoIosArrowForward className='button-icon__span' />
+            </span>
+          </Link>
         </div>
       </section>
     </main>

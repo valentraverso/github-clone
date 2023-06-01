@@ -22,6 +22,7 @@
     font-weight: 800;
 
     margin-top: 100px;
+    padding-top: 50px;
 }
 
 .valentino-copyrigth__p {
@@ -40,16 +41,26 @@
     align-items: center;
 }
 
-.button-view__span {
+.container-button__div {
+    transition: margin-left .5s;
+}
+
+.button-github__div {
     width: 300px;
     height: 40px;
-    font-size: 30px;
 
     background: linear-gradient(90deg, rgba(1, 1, 1, 0.6) 0%, rgba(1, 1, 1, 0.461139) 59.76%, rgba(1, 1, 1, 0) 100%);
     border: 1px #414a59 solid;
     border-radius: 100px;
+    box-shadow: #bc8cff 0 0 0 1px inset;
+
+    font-size: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container-button__div:hover .button-icon__span{
+    padding-left: 7px;
 }
