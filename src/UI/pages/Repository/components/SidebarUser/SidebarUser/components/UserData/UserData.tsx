@@ -9,7 +9,10 @@ export default function UserData({ name, login, bio }: Props) {
         <div>
             <h1>{name}</h1>
             <span>{login}</span>
-            <p>{bio}</p>
+            {
+                bio &&
+                <p>{bio}</p>
+            }
         </div>
     )
 }
