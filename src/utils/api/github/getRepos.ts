@@ -1,4 +1,3 @@
-import { GITHUB_KEY } from "../../config";
 import octokit from "./connectGithub";
 
 export default async function getRepos() {
