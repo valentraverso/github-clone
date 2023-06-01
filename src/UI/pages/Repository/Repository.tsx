@@ -16,7 +16,7 @@ function Repository() {
             :
             <main>
                 <div className="container-menu-sections__div">
-                    <div>
+                    <div className="menu-flex__div">
                         <span>Overview</span>
                     </div>
                 </div>

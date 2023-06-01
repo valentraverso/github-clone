@@ -13,6 +13,10 @@
     font-size: 12px;
 }
 
+.repository-name__span{
+    color: #71b7ff;
+}
+
 .language-repository__span {
     margin-right: 10px;
 }
