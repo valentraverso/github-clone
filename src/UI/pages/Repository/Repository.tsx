@@ -1,19 +1,22 @@
 import { useQuery } from "@tanstack/react-query";
 import getUserData from "../../../utils/api/github/getUserData";
-import SidebarUser from "./components/leftSide/SidebarUser";
+import SidebarUser from "./components/leftSide/SidebarUser/SidebarUser";
 
 function Repository() {
-    const { data: user } = useQuery(['user'], async () => {
+    const { data: user, isLoading } = useQuery(['user'], async () => {
         const fetch = await getUserData("valentraverso");
         return fetch;
     });
 
     return (
-        <main>
-            <div>
-                <SidebarUser user={user} />
-            </div>
-        </main>
+        isLoading ?
+            <p>Loading info user</p>
+            :
+            <main>
+                <div>
+                    <SidebarUser user={user.data} />
+                </div >
+            </main >
     )
 }
 

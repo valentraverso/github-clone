@@ -1,3 +1,5 @@
+import './ImageUser.css'
+
 interface Props {
     img: string;
 }
@@ -5,7 +7,7 @@ interface Props {
 const ImageUser = ({ img }: Props) => {
     return (
         <div>
-            <img src={img} />
+            <img src={img} className='avatar-user__img' alt='user avatar' />
         </div>
     )
 }
