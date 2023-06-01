@@ -29,4 +29,4 @@ function Homepage() {
   )
 }
 
-export { Homepage }
+export default Homepage;

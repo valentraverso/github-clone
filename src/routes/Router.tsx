@@ -1,16 +1,17 @@
+import { Suspense, lazy } from 'react'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Homepage } from "../UI/pages";
-import Repository from "../UI/pages/Repository/Repository";
+const Homepage = lazy(() => import('../UI/pages/Homepage/Homepage'));
+const Repository = lazy(() => import('../UI/pages/Repository/Repository'));
 
 const router = createBrowserRouter([
     {
         path: '/', // Main page Layout
-        element: <Homepage />
+        element: <Suspense fallback={<p>loading</p>}><Homepage /></Suspense>
     },
     {
         path: '/repository',
-        element: <Repository />
+        element: <Suspense fallback={<p>loading</p>}><Repository /></Suspense>
     }
 ]);
 
