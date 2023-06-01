@@ -1,0 +1,7 @@
+.container-grid__div{
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    width: 70%;
+    margin: auto;
+}

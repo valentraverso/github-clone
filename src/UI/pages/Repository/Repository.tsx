@@ -1,6 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
 import getUserData from "../../../utils/api/github/getUserData";
-import SidebarUser from "./components/leftSide/SidebarUser/SidebarUser";
+import SidebarUser from "./components/SidebarUser/SidebarUser/SidebarUser";
+import ListRepos from "./components/ListRepos/ListRepos";
+import './Repository.css';
 
 function Repository() {
     const { data: user, isLoading } = useQuery(['user'], async () => {
@@ -13,9 +15,10 @@ function Repository() {
             <p>Loading info user</p>
             :
             <main>
-                <div>
+                <div className="container-grid__div">
                     <SidebarUser user={user.data} />
-                </div >
+                    <ListRepos user={user.data} />
+                </div>
             </main >
     )
 }
