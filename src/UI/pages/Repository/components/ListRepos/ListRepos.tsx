@@ -13,7 +13,7 @@ export default function ListRepos({ user }: Props) {
     const [filteredData, setFilteredData] = useState(null);
 
     const { data: repositories, isLoading } = useQuery(['repository'], async () => {
-        const fetch = await getRepos("valentraverso");
+        const fetch = await getRepos("valentraverso", "updated");
 
         return fetch;
     });
