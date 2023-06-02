@@ -3,6 +3,7 @@ import getUserData from "../../../utils/api/github/getUserData";
 import SidebarUser from "./components/SidebarUser/SidebarUser/SidebarUser";
 import ListRepos from "./components/ListRepos/ListRepos";
 import './Repository.css';
+import Menu from "./components/Menu/Menu";
 
 function Repository() {
     const { data: user, isLoading } = useQuery(['user'], async () => {
@@ -15,11 +16,7 @@ function Repository() {
             <p>Loading info user</p>
             :
             <main>
-                <div className="container-menu-sections__div">
-                    <div className="menu-flex__div">
-                        <span>Overview</span>
-                    </div>
-                </div>
+                <Menu />
                 <div className="container-absolute__div">
                     <div className="container-grid__div">
                         <SidebarUser user={user.data} />
