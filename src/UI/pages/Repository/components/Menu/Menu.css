@@ -1,10 +1,10 @@
 .container-menu-sections__div {
-    height: 50px;
+    height: 60px;
     border-bottom: 1px solid #fff;
 }
 
 .menu-flex__div {
-    height: 45px;
+    height: 55px;
     display: flex;
     align-items: end;
     width: 65%;

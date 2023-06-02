@@ -7,8 +7,16 @@ export default async function getRepos(username: string, sort: "created" | "upda
             sort: sort // Sort result by "created" | "updated" | "pushed" | "full_name"
         });
 
-        return call.data;
+        const response = call.data.map(repository => ({
+            name: repository.name,
+            updated_at: repository.updated_at,
+            url: repository.html_url,
+            description: repository.description,
+            language: repository.language
+        }))
+
+        return response;
     } catch (err) {
-        return err;
+        return [];
     }
 }
