@@ -1,5 +1,6 @@
-// import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './CardRepository.css';
+import setDateUpdate from '../../../../../../../utils/misc/setDateUpdated';
 
 interface Props {
     repository: any;
@@ -7,18 +8,15 @@ interface Props {
 
 export default function CardRepository({ repository }: Props) {
 
-    // const [actualDate, setActualDate] = useState();
+    const { updated_at } = repository;
 
-    // const actualDate = new Date();
+    const [updatedDate, setUpdatepDate] = useState('');
 
+    useEffect(() => {
+        const updatedText = setDateUpdate(updated_at);
 
-    // useEffect(() => {
-    //     switch (repository.update_at) {
-    //         case 1:
-    //             return "as";
-
-    //     }
-    // })
+        setUpdatepDate(updatedText);
+    }, [updated_at])
 
     return (
         <div className='container-repository-card__div'>
@@ -31,7 +29,7 @@ export default function CardRepository({ repository }: Props) {
                         repository.language &&
                         <span className='language-repository__span'>{repository.language}</span>
                     }
-                    <span className='time-updated__span'>{repository.updated_at}</span>
+                    <span className='time-updated__span'>{updatedDate}</span>
                 </div>
             </div>
             <div>
