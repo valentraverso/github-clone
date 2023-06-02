@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './CardRepository.css';
+import '../../../../../../styles/colorsLanguages.css'
 import setDateUpdate from '../../../../../../../utils/misc/setDateUpdated';
 
 interface Props {
@@ -27,7 +28,7 @@ export default function CardRepository({ repository }: Props) {
                 <div className='container-repository-data__div'>
                     {
                         repository.language &&
-                        <span className='language-repository__span'>{repository.language}</span>
+                        <span className='language-repository__span'><div className={`language-color__div ${repository.language}`}></div>{repository.language}</span>
                     }
                     <span className='time-updated__span'>{updatedDate}</span>
                 </div>

@@ -20,7 +20,7 @@ function Repository() {
                 <div className="container-absolute__div">
                     <div className="container-grid__div">
                         <SidebarUser user={user.data} />
-                        <ListRepos user={user.data} />
+                        <ListRepos />
                     </div>
                 </div>
             </main >
