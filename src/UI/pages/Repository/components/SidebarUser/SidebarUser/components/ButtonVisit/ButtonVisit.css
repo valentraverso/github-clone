@@ -1,0 +1,25 @@
+.button-visit-profile__a {
+    display: block;
+    width: 60%;
+
+    margin: 10px 0;
+    padding: 10px;
+
+    background-color: #272b33;
+    border: 1px solid #7a828e;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.button-visit-flex__span {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-arrow-a__svg {
+    font-size: 12px;
+    margin-left: 10px;
+}

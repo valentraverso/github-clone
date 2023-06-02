@@ -1,3 +1,5 @@
+import './UserData.css';
+
 interface Props {
     name: string;
     login: string;
@@ -8,10 +10,10 @@ export default function UserData({ name, login, bio }: Props) {
     return (
         <div>
             <h1>{name}</h1>
-            <span>{login}</span>
+            <span className="username-text__span">{login}</span>
             {
                 bio &&
-                <p>{bio}</p>
+                <p className='bio-user__p'>{bio}</p>
             }
         </div>
     )
