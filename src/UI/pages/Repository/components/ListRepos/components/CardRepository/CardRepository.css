@@ -8,12 +8,12 @@
 }
 
 .container-repository-data__div {
-    margin-top:10px;
-    
+    margin-top: 10px;
+
     font-size: 12px;
 }
 
-.repository-name__span{
+.repository-name__span {
     color: #71b7ff;
 }
 
@@ -21,7 +21,7 @@
     margin-right: 10px;
 }
 
-.language-color__div{
+.language-color__div {
     display: inline-block;
 
     width: 10px;
@@ -29,6 +29,28 @@
 
     margin-right: 5px;
 
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 5px;
+}
+
+.star-button__span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 15px;
+    padding: 5px;
+
+    border-radius: 5px;
+
+    background-color: #272b33;
+    fill: #fff;
+    border: 1px solid #7a828e;
+
+    font-size: 14px;
+}
+
+.star-button__span>svg {
+    margin-right: 5px;
 }
