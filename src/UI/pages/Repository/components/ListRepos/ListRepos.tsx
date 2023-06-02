@@ -7,17 +7,20 @@ import './ListRepos.css'
 
 export default function ListRepos() {
     const [filteredData, setFilteredData] = useState(null);
+    const [sortRepositories, setSortRepositories] = useState<"created" | "updated" | "pushed" | "full_name">("updated");
 
     // Fetch repositories
-    const { data: repositories, isLoading } = useQuery(['repository'], async () => {
-        const fetch = await getRepos("valentraverso", "updated");
+    const { data: repositories, isLoading } = useQuery(['repository', sortRepositories], async () => {
+        const fetch = await getRepos("valentraverso", sortRepositories);
+
+        setFilteredData(null);
 
         return fetch;
     });
 
     return (
         <div className="container-repositories__div">
-            <SearchBar setFilteredData={setFilteredData} repositories={repositories} />
+            <SearchBar setFilteredData={setFilteredData} repositories={repositories} setSortRepositories={setSortRepositories} />
             {
                 isLoading ? // Wait until load repositories
                     <p>Loading repositories...</p>
