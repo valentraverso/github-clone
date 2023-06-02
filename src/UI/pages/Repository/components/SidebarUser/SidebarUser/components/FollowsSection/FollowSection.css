@@ -1,0 +1,21 @@
+.container-follows__div {
+    display: flex;
+    align-items: center;
+
+    padding-top: 10px;
+}
+
+.text-followers__span {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.text-following__span {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.follower-logo__svg {
+    margin-right: 5px;
+    fill: #fff;
+}
