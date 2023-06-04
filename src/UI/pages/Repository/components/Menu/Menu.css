@@ -35,3 +35,16 @@
     position: absolute;
     width: 100%;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 720px) {
+    .menu-flex__div{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .item-menu__span{
+        margin-right: 5px;
+    }
+}

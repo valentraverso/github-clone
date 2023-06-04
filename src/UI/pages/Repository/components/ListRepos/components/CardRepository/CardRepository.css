@@ -70,3 +70,10 @@
 .star-button__span>svg {
     margin-right: 5px;
 }
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+    .container-repository-card__div{
+        grid-template-columns: 75% 25%;
+    }
+}

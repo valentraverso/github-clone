@@ -1,0 +1,5 @@
+.sidebar-user__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

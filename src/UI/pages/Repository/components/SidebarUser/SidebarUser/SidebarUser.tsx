@@ -2,6 +2,7 @@ import ButtonVisit from "./components/ButtonVisit/ButtonVisit";
 import FollowsSection from "./components/FollowsSection/FollowsSection";
 import ImageUser from "./components/ImageUser/ImageUser";
 import UserData from "./components/UserData/UserData";
+import './SidebarUser.css';
 
 interface Props {
     user: any;
@@ -10,7 +11,7 @@ interface Props {
 function SidebarUser({ user }: Props) {
     const { avatar_url, name, login, bio, html_url: urlProfile, followers, following } = user;
     return (
-        <aside>
+        <aside className="sidebar-user__aside">
             <ImageUser img={avatar_url} />
             <UserData name={name} login={login} bio={bio} />
             <ButtonVisit urlProfile={urlProfile} />

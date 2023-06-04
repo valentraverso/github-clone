@@ -12,3 +12,17 @@
 
     top: 40px;
 }
+
+/* Mobile styles */
+
+@media screen and (max-width: 720px) {
+    .container-grid__div {
+        display: block;
+
+        width: 90%;
+    }
+
+    .container-absolute__div{
+        top: 70px;
+    }
+}
