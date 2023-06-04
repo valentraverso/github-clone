@@ -42,6 +42,7 @@ Get an API Key at [https://github.com/settings/tokens](https://github.com/settin
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React router DOM](https://reactrouter.com/)
 - [Typewriter effect](https://www.npmjs.com/package/typewriter-effect)
+- [React helmet async](https://www.npmjs.com/package/react-helmet-async)
 
 
 ### Future improvements
@@ -50,6 +51,7 @@ Some upgrades that I will like to do in the future are:
 - Use the API v4 of Github wich works with GraphQL.
 - Add a user search bar to improve UI/UX experience.
 - More sorting options: language, description and stars.
+- Add skeleton loaders to improve UI.
 
 ### Author
 
