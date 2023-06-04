@@ -33,6 +33,20 @@ Get an API Key at [https://github.com/settings/tokens](https://github.com/settin
     npm run dev
    ```
 
+#### Change user 
+
+If you want to change the user that it's display, you could change the request into:
+
+```folder
+   src/UI/pages/Repository.tsx
+```
+
+And set the `username` that you want in the line 11:
+
+```js
+    const fetch = await getUserData(":username");
+```
+
 ### Built with
 
 - [React](https://es.reactjs.org/)
