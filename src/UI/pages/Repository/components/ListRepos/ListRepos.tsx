@@ -25,16 +25,24 @@ export default function ListRepos() {
                 isLoading ? // Wait until load repositories
                     <p>Loading repositories...</p>
                     :
-                    (
-                        filteredData ? // Conditioanl rendering if user search
-                            filteredData?.map((repository: any) => (
-                                <CardRepository repository={repository} />
-                            ))
+                    <>
+                        {
+                            filteredData?.length < 1 || repositories?.length < 1 ?
+                            <p>We couldn't find repositories.</p>
                             :
-                            repositories?.map((repository: any) => (
-                                <CardRepository repository={repository} />
-                            ))
-                    )
+                            null
+                        }
+                        {
+                            filteredData ? // Conditioanl rendering if user search
+                                filteredData?.map((repository: any) => (
+                                    <CardRepository repository={repository} />
+                                ))
+                                :
+                                repositories?.map((repository: any) => (
+                                    <CardRepository repository={repository} />
+                                ))
+                        }
+                    </>
             }
         </div>
     );

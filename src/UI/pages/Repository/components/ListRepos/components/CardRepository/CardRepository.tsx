@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import setDateUpdate from '../../../../../../../utils/misc/setDateUpdated';
 import './CardRepository.css';
 import '../../../../../../styles/colorsLanguages.css'
+import { Link } from 'react-router-dom';
 
 interface Props {
     repository: any;
@@ -22,8 +23,9 @@ export default function CardRepository({ repository }: Props) {
     return (
         <div className='container-repository-card__div'>
             <div>
-                <div>
-                    <span className='repository-name__span'>{repository.name}</span>
+                <div className='container-repository-bio__div'>
+                    <span className='repository-name__span'><Link to={repository.url} target='_blank'>{repository.name}</Link></span>
+                    <span className='repository-description__span'>{repository.description}</span>
                 </div>
                 <div className='container-repository-data__div'>
                     {

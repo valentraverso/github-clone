@@ -13,8 +13,24 @@
     font-size: 12px;
 }
 
-.repository-name__span {
+.container-repository-bio__div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding-bottom: 10px;
+}
+
+.repository-name__span > a {
     color: #71b7ff;
+}
+
+.repository-name__span > a:hover{
+    text-decoration: underline #71b7ff;
+}
+
+.repository-description__span{
+    font-size: 10px;
 }
 
 .language-repository__span {

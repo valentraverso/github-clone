@@ -12,6 +12,10 @@
     font-size: 14px;
 }
 
+.button-visit-profile__a:hover{
+    background-color: #4b515c;
+}
+
 .button-visit-flex__span {
     display: flex;
 
