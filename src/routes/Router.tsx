@@ -13,7 +13,11 @@ const router = createBrowserRouter([
         path: '/repository',
         element: <Suspense fallback={<p>loading</p>}><Repository /></Suspense>
     }
-]);
+],
+// {
+//     basename: '/github-clone'
+// }
+);
 
 export default function Router() {
     return (
