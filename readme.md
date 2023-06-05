@@ -1,11 +1,12 @@
 <h1 align="center">Github Clone</h1>
 
 _This is application have a pretty landing page and a simply Github repository interface. In which you could sort repositories by `Date updated`, `Date created` and `Name`._
-I wish you like it😁
+I hope you like it😁
 
 ## Index
  - [Getting Started](#getting-started)
- - [Built with](#built-with)
+ - [Built With](#built-with)
+ - [Future Improvements](#future-improvements)
 
 ### Getting Started
 
